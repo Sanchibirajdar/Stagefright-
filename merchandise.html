@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stage Fright Store</title>
+    <link rel="stylesheet" href="merchandise.css">
+    <script>
+        function changeImage(select, imageId) {
+            document.getElementById(imageId).src = select.value;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="Homepage.html"><img src="Images/Stage-removebg-preview.png" alt="Stage Fright Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Homepage.html">Home</a></li>
+                <li><a href="Merchandise.html">Store</a></li>
+                <li><a href="toupage.html">Tours</a></li>
+                <li><a href="contact.html">Fright Club</a></li>
+            </ul>
+        </nav>
+        </div>
+  
+    </header>
+
+
+<!-- Scroll down to cart button -->
+<button id="scrollToCart" class="scroll-button">Go to Cart</button>
+
+    
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-modal-content">
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <div class="cart-buttons">
+                <button class="btn" onclick="proceedToCheckout()">Proceed to Checkout</button>
+                <button class="btn" onclick="continueShopping()">Continue Shopping</button>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <section class="merchandise">
+            <section class="video-section">
+                <video autoplay loop muted class="background-video">
+                    <source src="Images/discount.mp4" type="video/mp4">
+                </video>
+            </section>
+            <h1>Stage Fright Store</h1>
+            <p>Discover exclusive merchandise to show off your love for Stage Fright.</p>
+
+            <div class="product-grid">
+                
+                <div class="product-card">
+                    <img id="phonecase-image" src="Images/Reality.jpeg" alt="Stage Fright Phone Case">
+                    <div class="product-details">
+                        <h3>Stage Fright Phone-C</h3>
+                        <p>$25.00</p>
+                        <select onchange="changeImage(this, 'phonecase-image')">
+                            <option value="Reality.jpeg">Reality</option>
+                            <option value="Blurred.jpeg">Blurred</option>
+                            <option value="Push ur limits.jpeg">Push ur Limits</option>
+                        </select>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <img id="sock-image" src="Images/Socks Black.jpeg" alt="Stage Fright Socks">
+                    <div class="product-details">
+                        <h3>Stage Fright Socks </h3>
+                        <p>$15.00</p>
+                        <select onchange="changeImage(this, 'sock-image')">
+                            <option value="Socks Black.jpeg">Black</option>
+                            <option value="Socks White.jpeg">White</option>
+                        </select>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                
+
+                <div class="product-card">
+                    <img id="totebag-image" src="Images/Reality Tote Bag.jpeg" alt="Stage Fright Tote Bag">
+                    <div class="product-details">
+                        <h3>Stage Fright Tote Bag</h3>
+                        <p>$18.00</p>
+                        <select onchange="changeImage(this, 'totebag-image')">
+                            <option value="Reality Tote Bag.jpeg">Reality-Black</option>
+                            <option value="Reality White Tote Bag.jpeg">Reality-White</option>
+                            <option value="Echos Tote Bag.jpeg">Echos Tote Bag</option>
+                        </select>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+   
+                <div class="product-card">
+                    <img id="shirt-image" src="Images/Tshirt.jpeg" alt="Stage Fright Shirt">
+                    <div class="product-details">
+                        <h3>Stage Fright Shirt</h3>
+                        <p>$25.00</p>
+                        <select onchange="changeImage(this, 'shirt-image')">
+                            <option value="Tshirt.jpeg">Stage Fright</option>
+                            <option value="Tshirt2.jpeg">Think too much</option>
+                            <option value="Tshirt3.jpg">Take it all in</option>
+                        </select>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                
+
+                
+                <div class="product-card">
+                    <img src="Images/Cup.jpg" alt="Stage Fright Mug">
+                    <div class="product-details">
+                        <h3>Stage Fright Mug</h3>
+                        <p>$15.00</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="Images/Poster.jpeg" alt="Stage Fright Poster">
+                    <div class="product-details">
+                        <h3>Stage Fright Poster</h3>
+                        <p>$10.00</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="Images/Cap.jpg" alt="Stage Fright Cap">
+                    <div class="product-details">
+                        <h3>Stage Fright Cap</h3>
+                        <p>$20.00</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="Images/Reality Metal Watterbottle.jpeg" alt="Stage Fright Bottle">
+                    <div class="product-details">
+                        <h3>Stage Fright Plastic Bottle </h3>
+                        <p>$20.00</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="Images/Hoodie with cap.jpg" alt="Stage Fright Hoodie">
+                    <div class="product-details">
+                        <h3> Stage Fright Hoodie with Cap</h3>
+                        <p>$60.00</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="Images/Jumper.jpg" alt="Stage Fright Bottle">
+                    <div class="product-details">
+                        <h3>Stage Fright Jumper</h3>
+                        <p>$45.00</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="Images/album.jpeg" alt="Stage Fright Album">
+                    <div class="product-details">
+                        <h3>Stage Fright Album</h3>
+                        <p>$55.00</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+    </main>
+    
+    <section class="discount-section">
+        <h2>Apply Discount</h2>
+        <div class="discount-form">
+            <input type="text" id="discount-code" placeholder="Enter discount code" />
+            <button onclick="applyDiscount()">Apply</button>
+        </div>
+        <div id="discount-message"></div>
+    
+        <!-- Cart Inside Discount Section -->
+        <div class="cart-in-discount">
+            <button class="cart-button" onclick="toggleCart()">
+                🛒 (<span id="cart-count">0</span>)
+            </button>
+            <ul id="cart-items"></ul>
+            <div class="cart-total">
+                <p>Total: $<span id="total-amount">0.00</span></p>
+            </div>
+
+        </div>
+    </section>
+    
+    
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Stage Fright. All Rights Reserved.</p>
+            <p>Follow us on social media:</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com" target="_blank">Instagram</a>
+                <a href="https://www.twitter.com" target="_blank">Twitter</a>
+                <a href="https://www.facebook.com" target="_blank">Facebook</a>
+            </div>
+        </div>
+    </footer>
+    <script src="merch js.js"></script>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour - Stage Fright</title>
+    <link rel="stylesheet" href="tourpage.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="Homepage.html">
+                <img src="Images/Stage-removebg-preview.png" alt="Stage Fright Logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Homepage.html">Home</a></li>
+                <li><a href="Merchandise.html">Store</a></li>
+                <li><a href="Tourpage.html">Tours</a></li>
+                <li><a href="contact.html">Fright Club</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="main-content">
+        <!-- Countdown Section -->
+        <section class="countdown">
+            <h2>Countdown our Tour to Los Angeles!!!!</h2>
+            <div id="countdown-timer">
+                <!-- Countdown Timer -->
+            </div>
+        </section>
+        <section class="World-Tour-Information">
+            <h1>World Tour</h1>
+            <p>Click below to find more information!</p>
+            <a href="worldtour.html"> 
+                <button class="World-Tour-button">World tour!</button>
+            </a>
+        </section>
+
+        <!-- Tour Section -->
+        <section class="tour-dates">
+            <h2>Upcoming Tour Dates</h2>
+            <div class="tour-container">
+                <div class="tour-date" style="background-image: url('Images/LA.jfif');">
+                    <h3>March 15, 2025</h3>
+                    <p>Los Angeles, CA - The Roxy Theatre</p>
+                    <p>Time: 8:00 PM</p>
+                    <button class="buy-tickets">Buy Tickets</button>
+                </div>
+                <div class="tour-date" style="background-image: url('Images/NY.jfif');">
+                    <h3>March 18, 2025</h3>
+                    <p>New York, NY - Madison Square Garden</p>
+                    <p>Time: 8:00 PM</p>
+                    <button class="buy-tickets">Buy Tickets</button>
+                </div>
+                <div class="tour-date" style="background-image: url('Images/CH.jfif');">
+                    <h3>March 22, 2025</h3>
+                    <p>Chicago, IL - The Fillmore</p>
+                    <p>Time: 8:00 PM</p>
+                    <button class="buy-tickets">Buy Tickets</button>
+                </div>
+                <div class="tour-date" style="background-image: url('Images/LN.jfif');">
+                    <h3>March 25, 2025</h3>
+                    <p>London, UK - The O2 Arena</p>
+                    <p>Time: 8:00 PM</p>
+                    <button class="buy-tickets">Buy Tickets</button>
+                </div>
+                <div class="tour-date" style="background-image: url('Images/TK.jfif');">
+                    <h3>March 28, 2025</h3>
+                    <p>Tokyo, Japan - Tokyo Dome</p>
+                    <p>Time: 8:00 PM</p>
+                    <button class="buy-tickets">Buy Tickets</button>
+                </div>
+                <div class="tour-date" style="background-image: url('Images/paris.jpg');">
+                    <h3>March 30, 2025</h3>
+                    <p>Paris, France - Accor Arena</p>
+                    <p>Time: 7:30 PM</p>
+                    <button class="buy-tickets">Buy Tickets</button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Ticket Purchase Modal is hideen  -->
+        <div id="ticket-modal" class="ticket-modal">
+            <div class="modal-content">
+                <h3>Choose Your Tickets</h3>
+                <label for="ticket-type">Ticket Type:</label>
+                <select id="ticket-type">
+                    <option value="adult">Adult - $50</option>
+                    <option value="child">Child - $30</option>
+                </select>
+                <label for="ticket-quantity">Quantity:</label>
+                <input type="number" id="ticket-quantity" value="1" min="1">
+                <button id="proceed-checkout" class="buy-tickets">Proceed to Checkout</button>
+                <button id="close-modal" class="buy-tickets">Close</button>
+            </div>
+        </div>
+
+        <!-- Fan Media Section -->
+        <section class="fan-media">
+            <h2>Fan Media</h2>
+            <p>Check out some of the awesome fan creations and media!</p>
+            <!-- Scrolling container -->
+            <div class="scroll-container">
+                <div class="scroll-content">
+                    <img src="Images/Fan media1.jpeg" alt="Fan Photo 1">
+                    <img src="Images/Fan media 2.jpeg" alt="Fan Photo 2">
+                    <img src="Images/Fan media 3.jpeg" alt="Fan Photo 3">
+                    <img src="Images/Fan media 4.jpeg" alt="Fan Photo 4">
+                    <img src="Images/Fan media 5.jpeg" alt="Fan Photo 5">
+                </div>
+            </div>
+        </section>
+    </main>
+    
+        <!-- Mailing List Section -->
+        <section class="mailing-list">
+            <h2>Join Our Mailing List</h2>
+            <p>Stay updated with the latest news, tours, and merchandise!</p>
+            <form>
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe!</button>
+            </form>
+        </section>
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-text">
+                <p>&copy; 2025 Stage Fright. All Rights Reserved.</p>
+            </div>
+            <div class="social-links">
+                <a href="#" target="_blank">Facebook</a>
+                <a href="#" target="_blank">Twitter</a>
+                <a href="#" target="_blank">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Countdown Timer
+        const countdownDate = new Date("March 15, 2025 08:00:00").getTime();
+        const countdownTimer = document.getElementById('countdown-timer');
+        
+        const interval = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = countdownDate - now;
+            
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            countdownTimer.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+            
+            if (distance < 0) {
+                clearInterval(interval);
+                countdownTimer.innerHTML = "Tour Started!";
+            }
+        }, 1000);
+
+        // Show ticket modal when Buy Tickets button is clicked
+        document.querySelectorAll('.buy-tickets').forEach(button => {
+            button.addEventListener('click', function () {
+                document.getElementById('ticket-modal').style.display = 'block';
+            });
+        });
+
+        // Close ticket modal
+        document.getElementById('close-modal').addEventListener('click', function () {
+            document.getElementById('ticket-modal').style.display = 'none';
+        });
+
+        // Proceed to checkout (for demo purposes cause we dumb asf to be cool)
+        document.getElementById('proceed-checkout').addEventListener('click', function () {
+            alert('Proceeding to checkout...');
+            document.getElementById('ticket-modal').style.display = 'none';
+        });
+    </script>
+</body>
+</html>

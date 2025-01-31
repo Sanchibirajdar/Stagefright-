@@ -1,0 +1,387 @@
+/* General Styling */
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Header Styling */
+header {
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    width: 120px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFD700;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #fff;
+}
+
+
+/* Countdown Section */
+.countdown {
+    padding: 60px 40px;
+    text-align: center;
+    background-color: #FFD700;
+    color: #000;
+    border-bottom: 3px solid #333;
+}
+
+#countdown-timer {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* World Tour Section */
+.World-Tour-Information {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #000000;
+    color: #fff;
+    border-bottom: 3px solid #FFD700;
+}
+
+.World-Tour-button {
+    padding: 12px 25px;
+    font-size: 18px;
+    background-color: #FFD700;
+    color: black;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.World-Tour-button:hover {
+    background-color: #FFC107;
+    transform: scale(1.05);
+}
+
+/* Tour Section */
+.tour-dates {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+.tour-dates h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #000000;
+    font-weight: 600;
+}
+
+.tour-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.tour-date {
+    width: 300px;
+    height: 350px;
+    background-color: #000;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.tour-date:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.tour-date h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #FFD700;
+}
+
+.tour-date p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.buy-tickets {
+    background-color: #FFD700;
+    color: black;
+    padding: 12px 30px;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.buy-tickets:hover {
+    background-color: #FFC107;
+    transform: scale(1.05);
+}
+
+/* Ticket Modal */
+.ticket-modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the modal */
+    width: 400px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.modal-content {
+    background-color: rgb(0, 0, 0);
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+#ticket-type, #ticket-quantity {
+    margin: 15px 0;
+    padding: 12px;
+    font-size: 16px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#proceed-checkout {
+    background-color: #FFD700;
+    color: black;
+    padding: 12px 25px;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+#proceed-checkout:hover {
+    background-color: #FFC107;
+}
+
+#close-modal {
+    background-color: #FF4C4C;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+#close-modal:hover {
+    background-color: #FF1C1C;
+}
+
+/* Mailing List Section */
+.mailing-list {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #000000;
+    color: #fff;
+}
+
+.mailing-list h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.mailing-list p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.mailing-list form {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.mailing-list input {
+    padding: 12px;
+    width: 400px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.mailing-list button {
+    padding: 12px 25px;
+    font-size: 16px;
+    background-color: #FFD700;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Fan Media Section */
+.fan-media {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+.fan-media h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.fan-media p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.media-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.scroll-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    background: black; /* Optional background */
+    padding: 10px 0;
+}
+
+.scroll-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    animation: scroll-left 9s linear infinite;
+}
+
+.scroll-content img {
+    height: 350px; /* Adjust size */
+    border-radius: 10px; /* Optional */
+}
+
+@keyframes scroll-left {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+.media-item {
+    width: 250px;
+    height: 250px;
+    background-color: #ccc;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.media-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    width: 100%;
+}
+
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-text p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: #FFD700;
+    font-size: 20px;
+}
+
+.social-links a:hover {
+    color: #fff;
+}
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main content should TAKE everything here */
+.main-content {
+    flex: 1;
+}
